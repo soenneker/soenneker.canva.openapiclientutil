@@ -10,5 +10,10 @@ namespace Soenneker.Canva.OpenApiClientUtil.Abstract;
 /// </summary>
 public interface ICanvaOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
+    /// <summary>
+    /// Gets the cached Canva client for the current utility instance.
+    /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>A task containing the client.</returns>
     ValueTask<CanvaOpenApiClient> Get(CancellationToken cancellationToken = default);
 }

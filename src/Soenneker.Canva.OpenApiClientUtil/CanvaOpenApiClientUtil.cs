@@ -14,7 +14,6 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Canva.OpenApiClientUtil;
 
-///<inheritdoc cref="ICanvaOpenApiClientUtil"/>
 public sealed class CanvaOpenApiClientUtil : ICanvaOpenApiClientUtil
 {
     private readonly AsyncSingleton<CanvaOpenApiClient> _client;
