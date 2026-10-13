@@ -25,7 +25,7 @@ public sealed class CanvaOpenApiClientUtil : ICanvaOpenApiClientUtil
         {
             HttpClient httpClient = await httpClientUtil.Get(token).NoSync();
 
-            var apiKey = configuration.GetValueStrict<string>("Canva:AccessToken");
+            var apiKey = configuration.GetStringStrict("Canva:AccessToken");
             string authHeaderName = configuration["Canva:AuthHeaderName"] ?? "Authorization";
             string authHeaderValueTemplate = configuration["Canva:AuthHeaderValueTemplate"] ?? "Bearer {token}";
             string authHeaderValue = authHeaderValueTemplate.Replace("{token}", apiKey, StringComparison.Ordinal);
