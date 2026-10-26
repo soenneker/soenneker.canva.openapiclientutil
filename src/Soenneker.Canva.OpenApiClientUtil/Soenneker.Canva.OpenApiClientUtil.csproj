@@ -47,6 +47,6 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="4.0.56" />
         <PackageReference Include="Soenneker.Canva.HttpClients" Version="11.0.86" />
-        <PackageReference Include="Soenneker.Canva.OpenApiClient" Version="4.0.43" />
+        <PackageReference Include="Soenneker.Canva.OpenApiClient" Version="11.0.44" />
     </ItemGroup>
 </Project>
